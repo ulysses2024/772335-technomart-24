@@ -7,11 +7,13 @@
   <body>
     <header class="main-header">
       <div class="header-top-panel">
-        <a href="index.html" class="main-header-logo">Техномарт</a>
-        <!-- Search Form? -->
-        <a class="bookmarks">Закладки:<span class="bookmarks-number">0</span></a>
-        <a class="basket basket-full">Корзина:<span class="basket-number">10</span></a>
-        <a class="order-button-active">Оформить заказ</a>
+        <a href="index.html" class="main-header-logo" style="background:red"><!--Стиль временно для наглядности--><img src="img/logo-technomart.svg" alt="Логотип Техномарт" /></a>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" placeholder="Поиск">
+        </form>
+        <a href="#" class="bookmarks">Закладки:<span class="bookmarks-number">0</span></a>
+        <a href="#" class="basket basket-full">Корзина:<span class="basket-number">10</span></a>
+        <a href="#" class="order-button-active">Оформить заказ</a>
       </div>
       <div class="header-bottom-panel">
         <p class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -49,21 +51,46 @@
       </ul>
       <h1 class="catalog-title">Перфораторы</h1>
       <section class="filter">
-        <!--Filter-->
-        <h2 class="producers-title">Производители:</h2>
-        <ul class="producers-list">
-          <li class="producers-picked">Bosch</li>
-          <li>Интерскол</li>
-          <li class="producers-picked">Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <h2 class="supply-title">Питание:</h2>
-        <ul class="supply-list">
-          <li class="supply-picked">Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
-        <a class="filter-button">Показать</a>
+        <h2 class="filter-title">Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Цена</legend>
+            <input type="range" min="0" max="30000" step="1000">
+            <p class="price-range">0 - 30000</p>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul class="producers-list">
+              <li>
+                <label><input type="checkbox" name="item-Bosh" checked>Bosch</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="item-Interskol">Интерскол</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="item-Makita" checked>Makita</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="item-Dewalt">Dewalt</label>
+              </li>
+              <li>
+                <label><input type="checkbox" name="item-Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul class="supply-list">
+              <li>
+                <label><input type="radio" name="supply-type" value="battery" checked>Аккумуляторные</label>
+              </li>
+              <li>
+                <label><input type="radio" name="supply-type" value="net">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <!--Sorting-->
@@ -101,10 +128,23 @@
           </li>
         </ul>
       </section>
+      <section class="item-into-basket">
+        <h2 class="visually-hidden">Товар в корзине</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="into-basket-checked">
+              <p class="into-basket-note">Товар добавлен в корзину!</p>
+            </div>
+          <div class="into-basket-buttons">
+            <button type="submit" name="submit-button">Оформить заказ</button>
+            <button type="button" name="submit-button">Продолжит покупки</button>
+          </div>
+          </form>
+          <button type="button" name="close-into-basket-window">Закрыть</button>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="footer-top-panel">
-        <a href="index.html" class="main-footer-logo">Техномарт</a>
+        <a href="index.html" class="main-footer-logo" style="background:red"><!--Стиль временно для наглядности--><img src="img/logo-technomart.svg" alt="Логотип Техномарт" /></a>
         <p class="main-footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p>
         <nav class="main-footer-navigation">
           <ul class="footer-navigation">

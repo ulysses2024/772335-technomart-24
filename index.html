@@ -7,11 +7,13 @@
   <body>
     <header class="main-header">
       <div class="header-top-panel">
-        <a class="main-header-logo">Техномарт</a>
-        <!-- Search Form? -->
-        <a class="bookmarks">Закладки:<span class="bookmarks-number">0</span></a>
-        <a class="basket">Корзина:<span class="basket-number">0</span></a>
-        <a class="order-button">Оформить заказ</a>
+        <a class="main-header-logo" style="background:red"><!--Стиль временно для наглядности--><img src="img/logo-technomart.svg" alt="Логотип Техномарт" /></a>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" placeholder="Поиск">
+        </form>
+        <a href="#" class="bookmarks">Закладки:<span class="bookmarks-number">0</span></a>
+        <a href="#" class="basket">Корзина:<span class="basket-number">0</span></a>
+        <a href="#" class="order-button">Оформить заказ</a>
       </div>
       <div class="header-bottom-panel">
         <h1 class="main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -52,13 +54,37 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map-small.png" alt="Большая конюшенная ул., 19">
-        <a href="#" class="contact-button">Заблудились? Напишите нам!</a>
+        <button type="button" name="map-popup-button"><img src="img/map-small.png" alt="Адрес:Большая конюшенная ул., 19"></button>
+        <div class="map-popup-window">
+          <img src="img/map-large.png" alt="Адрес:Большая конюшенная ул., 19">
+          <button type="button" name="close-map-popup-window">Закрыть</button>
+        </div>
+        <button type="button" name="contact-button">Заблудились? Напишите нам!</button>
+      </section>
+      <section class="write-us-window">
+        <h2 class="visually-hidden">Раздел обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-us-fieldset">
+            <p>
+              <label>Ваше Имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+            </p>
+            <p>
+              <label>Ваш e-mail:<input type="email" name="e-mail" placeholder="email@example.com"></label>
+            </p>
+            <p>
+              <label>Текст письма:<textarea name="letter" rows="5" placeholder="В свободной форме"></textarea></label>
+            </p>
+          </div>
+          <div class="writte-us-submit-button">
+            <button type="submit" name="submit-button">Отправить</button>
+          </div>
+          </form>
+          <button type="button" name="close-write-us-window">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-top-panel">
-        <a class="main-footer-logo">Техномарт</a>
+        <a class="main-footer-logo" style="background:red"><!--Стиль временно для наглядности--><img src="img/logo-technomart.svg" alt="Логотип Техномарт" /></a>
         <p class="main-footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p>
         <nav class="main-footer-navigation">
           <ul class="footer-navigation">
