@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет-магазин "Техномарт"</title>
+    <title>Перфораторы "Техномарт"</title>
   </head>
   <body>
     <header class="main-header">
@@ -10,6 +10,7 @@
         <a href="index.html" class="main-header-logo" style="background:red"><!--Стиль временно для наглядности--><img src="img/logo-technomart.svg" alt="Логотип Техномарт" /></a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" placeholder="Поиск">
+          <input type="submit" class="visually-hidden" name="search-submit">
         </form>
         <a href="#" class="bookmarks">Закладки:<span class="bookmarks-number">0</span></a>
         <a href="#" class="basket basket-full">Корзина:<span class="basket-number">10</span></a>
@@ -23,8 +24,9 @@
         </div>
         <div class="user-nav">
           <div class="user-login">
+            <a href="#" class="user-avatar"><span class="user-login-text">Войти</span></a>
             <a href="#" class="user-name">Равшан Джамшутович</a>
-            <a href="#" class="logout"><img src="img/icon-logout.svg" alt="Exit"></a>
+            <a href="#" class="logout"><span class="user-logout">Выйти</span></a>
           </div>
           <a href="#" class="user-orders">Мои заказы</a>
           <a href="#" class="user-account">Личный кабинет</a>
@@ -33,7 +35,7 @@
           <ul class="main-navigation-list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="company.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a>Каталог</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="offers.html">Спецпредложения</a></li>
             <li><a href="delivery.html">Доставка</a></li>
@@ -44,7 +46,7 @@
     </header>
     <main>
       <ul class="breadcrumbs">
-        <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная"></a></li>
+        <li><a href="index.html"><span class="breadcrumbs-mai">Главная</span></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="instruments.html">Инструмент</a></li>
         <li><span class="breadcrumbs-current">Перфораторы</span></li>
@@ -62,19 +64,19 @@
             <legend>Производители:</legend>
             <ul class="producers-list">
               <li>
-                <label><input type="checkbox" name="item-Bosh" checked>Bosch</label>
+                <label><input type="checkbox" name="item-bosh" checked>Bosch</label>
               </li>
               <li>
-                <label><input type="checkbox" name="item-Interskol">Интерскол</label>
+                <label><input type="checkbox" name="item-interskol">Интерскол</label>
               </li>
               <li>
-                <label><input type="checkbox" name="item-Makita" checked>Makita</label>
+                <label><input type="checkbox" name="item-makita" checked>Makita</label>
               </li>
               <li>
-                <label><input type="checkbox" name="item-Dewalt">Dewalt</label>
+                <label><input type="checkbox" name="item-dewalt">Dewalt</label>
               </li>
               <li>
-                <label><input type="checkbox" name="item-Hitachi">Hitachi</label>
+                <label><input type="checkbox" name="item-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
@@ -128,19 +130,6 @@
           </li>
         </ul>
       </section>
-      <section class="item-into-basket">
-        <h2 class="visually-hidden">Товар в корзине</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="into-basket-checked">
-              <p class="into-basket-note">Товар добавлен в корзину!</p>
-            </div>
-          <div class="into-basket-buttons">
-            <button type="submit" name="submit-button">Оформить заказ</button>
-            <button type="button" name="submit-button">Продолжит покупки</button>
-          </div>
-          </form>
-          <button type="button" name="close-into-basket-window">Закрыть</button>
-      </section>
     </main>
     <footer class="main-footer">
       <div class="footer-top-panel">
@@ -179,5 +168,18 @@
         </p>
       </div>
     </footer>
+    <section class="basket-popup basket-popup-success">
+      <h2 class="visually-hidden">Товар в корзине</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="basket-popup-checked">
+          <p class="basket-popup-note">Товар добавлен в корзину!</p>
+        </div>
+        <div class="basket-popup-buttons">
+          <button type="submit" name="submit-button">Оформить заказ</button>
+          <button type="button" name="continue-button">Продолжит покупки</button>
+        </div>
+      </form>
+      <button type="button" name="close-into-basket-window">Закрыть</button>
+    </section>
   </body>
 </html>
