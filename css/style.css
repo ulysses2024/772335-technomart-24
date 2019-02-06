@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top-panel {
+  background-color: #293449;
+}
+
+.main-header-logo {
+  background-color: #ee3643;
+}
+
+.search input[type="search"] {
+  background-color: transparent;
+  border: 0;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.header-top-panel a {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.basket-full {
+  background-color: #ee3643;
+}
+
+.order-button {
+  background-color: #63a63e;
+}
+
+.header-bottom-panel {
+  background-color: #f4f7f9;
+}
+
+.main-title {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: #e9292a;
+
+  border: 3px solid white;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+
+.user-nav a {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: left;
+  color: black;
+
+  background-color: #ffffff;
+}
+
+.user-nav .user-orders,
+.user-nav .user-account {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+
+  background-color: transparent;
+}
+
+.main-navigation {
+background-color: #32425c;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.main-navigation a {
+ font-size: 17px;
+ line-height: 17px;
+ text-align: left;
+ color: #ffffff;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.about-company p,
+.contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-company-list {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.button {
+ font-size: 14px;
+ line-height: 18px;
+ text-align: center;
+ color: #ffffff;
+ text-transform: uppercase;
+
+ background-color: #ee3643;
+ border: 0;
+}
+
+.footer-top-panel {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: #f3f7f9;
+
+  background-color: #32425c;
+}
+
+.main-footer-logo {
+  background-color: #ee3643;
+}
+
+.footer-navigation a{
+  color: #f3f7f9;
+}
+
+.catalog-navigation a,
+.email,
+.site-address {
+  color: #ffd180;
+}
+
+.footer-navigation,
+.catalog-navigation,
+.social-icons  {
+    list-style: none;
+}
+
+.footer-bottom-panel {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.social-icons a {
+ color: #ffffff;
+}
+
+.map-popup-window,
+.write-us-window,
+.basket-popup {
+  display: none;
+}
+
+.breadcrumbs,
+.producers-list,
+.supply-list,
+.catalog-list {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+
+.filter-title,
+.catalog-sorting {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f7f3ec;
+}
+
+.filter fieldset {
+  border: 0;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-list li {
+  width: 220px;
+  height: 318px;
+  border: 1px solid #e5e5e5;
+}
+
+.new-item {
+  background-image: url("../img/new flag.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  /* Пока не знаю как вынести эту картинку поверх перфоратора*/
+}
+
+.catalog-item-name {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-id {
+  text-transform: uppercase;
+}
+
+.item-old-price,
+.item-current-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+}
+
+.item-old-price {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.item-current-price {
+  color: #ffffff;
+  background-image: url("../img/red-button.svg");
+  background-repeat: no-repeat;
+}
+
+.item-if-picked,
+.basket-popup {
+  display:none;
+}
