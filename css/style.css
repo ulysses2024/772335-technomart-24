@@ -111,7 +111,8 @@ background-color: #32425c;
  color: #ffffff;
 }
 
-h2 {
+.about-company h2,
+.contacts h2 {
   font-size: 30px;
   line-height: 30px;
   text-align: left;
@@ -154,22 +155,22 @@ h2 {
   background-color: #32425c;
 }
 
-.main-footer-logo {
+.footer-logo {
   background-color: #ee3643;
 }
 
-.footer-navigation a{
+.footer-navigation-list a{
   color: #f3f7f9;
 }
 
-.catalog-navigation a,
+.catalog-navigation-list a,
 .email,
 .site-address {
   color: #ffd180;
 }
 
-.footer-navigation,
-.catalog-navigation,
+.footer-navigation-list,
+.catalog-navigation-list,
 .social-icons  {
     list-style: none;
 }
@@ -272,8 +273,8 @@ h2 {
   text-transform: uppercase;
 }
 
-.item-old-price,
-.item-current-price {
+.catalog-item-oldprice,
+.catalog-item-currentprice {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -281,12 +282,12 @@ h2 {
   text-align: center;
 }
 
-.item-old-price {
+.catalog-item-oldprice {
   color: #999999;
   text-decoration: line-through;
 }
 
-.item-current-price {
+.catalog-item-currentprice {
   color: #ffffff;
   background-image: url("../img/red-button.svg");
   background-repeat: no-repeat;
