@@ -1,6 +1,5 @@
 body {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: #ffffff;
 
@@ -26,22 +25,32 @@ a {
 .header-top-panel-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .main-header-logo {
+  display: block;
   width: 220px;
-  align-self: stretch;
   background-color: #ee3643;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0 0 #b52933;
 }
 
 .search input[type="search"] {
+  margin: 0;
+  width: 270px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 49px;
   background-color: transparent;
+  color: #ffffff;
   border: 0;
+}
+.search input[type="search"]:focus {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 input[type="search"]::-webkit-input-placeholder {
+  padding: 0;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -49,11 +58,14 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .header-top-panel a:not(.main-header-logo) {
+  display: block;
+  box-sizing: border-box;
+  width: 150px;
   font-size: 17px;
   line-height: 18px;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
-  margin: 12px 0px;
+  padding: 12px;
 }
 
 .basket-full {
@@ -72,16 +84,18 @@ input[type="search"]::-webkit-input-placeholder {
 
 .header-bottom-panel-wrapper {
   display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  justify-content: flex-start;
+  margin-bottom: 39px;
 }
 
 .main-title {
-  margin:0;
-  width: 196px;
+  margin: 0;
+  margin-right: 20px;
+  width: 300px;
+  box-sizing: border-box;
   padding-left: 53px;
   padding-right: 51px;
+  padding-top: 3px;
   padding-bottom: 0px;
 
   font-size: 16px;
@@ -98,20 +112,21 @@ input[type="search"]::-webkit-input-placeholder {
 
 .header-phone {
   display: block;
+  margin-bottom: 5px;
+  box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 8px;
+  padding-left: 71px;
+  padding-right: 20px;
   border: 3px solid white;
 
   font-size: 21px;
-  text-align: center;
   line-height: 21px;
   color: #e9292a;
-
 }
 
 .header-address {
-  margin-top: 5px;
-  margin-bottom: 0px;
+  margin: 0px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -120,10 +135,11 @@ input[type="search"]::-webkit-input-placeholder {
 
 .user-nav {
   width: 299px;
+  margin-left: auto;
   margin-bottom: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .enter-button,
@@ -141,10 +157,10 @@ input[type="search"]::-webkit-input-placeholder {
 
 .enter-button {
   width: 121px;
-  margin-left: 17px;
 }
 
 .registration-button {
+  margin-left: 10px;
   width: 150px;
 }
 
@@ -204,25 +220,34 @@ input[type="search"]::-webkit-input-placeholder {
 
 /* ----------------------------MAIN-----------------------------------*/
 
-.content-columns {
+.about-us-columns {
   display: flex;
   justify-content: space-between;
-  padding-top:82px;
+  padding-top:80px;
   padding-bottom: 86px;
 }
 
 .about-company {
-  width: 520px;
+  width: 519px;
 }
 
 .contacts {
   width: 300px;
 }
 
+about-company,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .about-company h2,
 .contacts h2 {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
@@ -231,6 +256,8 @@ input[type="search"]::-webkit-input-placeholder {
 
 .about-company p,
 .contacts p {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -239,32 +266,44 @@ input[type="search"]::-webkit-input-placeholder {
 
 .about-company p:nth-child(3) {
   width: 390px;
+  margin-bottom: 22px;
 }
 
 .about-company-list {
+  margin: 0;
+  list-style: none;
+  padding-left: 34px;
   font-size: 18px;
   line-height: 20px;
   text-align: left;
   color: #000000;
 }
 
+.about-company-list li {
+  margin-bottom: 19px;
+}
+
+.contacts p {
+  width: 180px;
+  margin-bottom: 30px;
+}
+
 .company-button {
-  display:inline-block;
+  display: block;
   width: 220px;
-  vertical-align: middle;
 }
 
 .contact-button {
-  margin-top: auto;
+  padding: 0;
   width: 300px;
 }
 
 .company-button,
 .contact-button {
+  margin-top: auto;
   height: 38px;
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -280,6 +319,8 @@ input[type="search"]::-webkit-input-placeholder {
 .footer-top-panel-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 49px;
+
   font-size: 18px;
   line-height: 24px;
   text-align: left;
@@ -288,7 +329,6 @@ input[type="search"]::-webkit-input-placeholder {
 
 .footer-contacts-column {
   width: 330px;
-  margin-bottom: 50px;
 }
 
 .footer-logo {
@@ -340,18 +380,14 @@ input[type="search"]::-webkit-input-placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 38px;
+  padding-bottom: 33px;
+
 
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   color: #ffffff;
-}
-
-.copyright,
-.feedback,
-.development {
-  margin-top: 38px;
-  margin-bottom: 33px;
 }
 
 .copyright {
@@ -363,12 +399,21 @@ input[type="search"]::-webkit-input-placeholder {
   margin: 0px;
 }
 
+.social-icons li{
+  display: inline-block;
+}
+
 .feedback,
 .development {
   width: 140px;
 }
 
-
+.copyright,
+.feedback,
+.development {
+  margin: 0;
+  padding: 0;
+}
 
 .map-popup-window,
 .write-us-window,
