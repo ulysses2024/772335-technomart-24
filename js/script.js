@@ -29,17 +29,18 @@
   var card = document.querySelectorAll(".catalog-list li");
   var bookmark = document.querySelectorAll(".item-bookmarks-button");
   var bookmarks_head = document.querySelector(".bookmarks");
+  var basket_head = document.querySelector(".basket");
 
   if (contact) {
     contact.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup_contact.classList.add("popup-show");
-        username.focus();
+      evt.preventDefault();
+      popup_contact.classList.add("popup-show");
+      username.focus();
     });
 
     close_contacts.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup_contact.classList.remove("popup-show");
+      evt.preventDefault();
+      popup_contact.classList.remove("popup-show");
     });
 
     window.addEventListener("keydown", function (evt) {
@@ -75,34 +76,34 @@
 
   if (delivery) {
     delivery.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        delivery.classList.add("active-service");
-        guarantee.classList.remove("active-service");
-        credit.classList.remove("active-service");
+      evt.preventDefault();
+      delivery.classList.add("active-service");
+      guarantee.classList.remove("active-service");
+      credit.classList.remove("active-service");
 
-        delivery_block.classList.add("service-block-active");
-        guarantee_block.classList.remove("service-block-active");
-        credit_block.classList.remove("service-block-active");
+      delivery_block.classList.add("service-block-active");
+      guarantee_block.classList.remove("service-block-active");
+      credit_block.classList.remove("service-block-active");
     });
     guarantee.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        guarantee.classList.add("active-service");
-        delivery.classList.remove("active-service");
-        credit.classList.remove("active-service");
+      evt.preventDefault();
+      guarantee.classList.add("active-service");
+      delivery.classList.remove("active-service");
+      credit.classList.remove("active-service");
 
-        guarantee_block.classList.add("service-block-active");
-        delivery_block.classList.remove("service-block-active");
-        credit_block.classList.remove("service-block-active");
+      guarantee_block.classList.add("service-block-active");
+      delivery_block.classList.remove("service-block-active");
+      credit_block.classList.remove("service-block-active");
     });
     credit.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        credit.classList.add("active-service");
-        delivery.classList.remove("active-service");
-        guarantee.classList.remove("active-service");
+      evt.preventDefault();
+      credit.classList.add("active-service");
+      delivery.classList.remove("active-service");
+      guarantee.classList.remove("active-service");
 
-        credit_block.classList.add("service-block-active");
-        delivery_block.classList.remove("service-block-active");
-        guarantee_block.classList.remove("service-block-active");
+      credit_block.classList.add("service-block-active");
+      delivery_block.classList.remove("service-block-active");
+      guarantee_block.classList.remove("service-block-active");
     });
   };
 
@@ -120,20 +121,22 @@
   };
 
   if (basket) {
-    basket.forEach(function(item, i, basket) {
-      item.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popup_basket.classList.add("popup-show");
-          submit_basket.focus();
-      })
-    });
 
-    bookmark.forEach(function(item, i, bookmark) {
-      item.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          bookmarks_head.classList.add("bookmarks-full");
+    for (var i=0; i<basket.length; i++) {
+      basket[i].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        basket_head.classList.add("basket-full");
+        popup_basket.classList.add("popup-show");
+        submit_basket.focus();
       })
-    });
+    };
+
+    for (var i=0; i<bookmark.length; i++) {
+      bookmark[i].addEventListener("click", function (evt) {
+        evt.preventDefault();
+        bookmarks_head.classList.add("bookmarks-full");
+      })
+    };
 
     close_basket.addEventListener("click", function (evt) {
       evt.preventDefault();
