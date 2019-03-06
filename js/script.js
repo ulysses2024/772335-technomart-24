@@ -11,7 +11,7 @@
 
   var slider_left = document.querySelector(".slider-left-button");
   var slider_right = document.querySelector(".slider-right-button");
-  var dreli = document.querySelector(".promo-dreli");
+  var drills = document.querySelector(".promo-drills");
   var perforators = document.querySelector(".promo-perforators");
 
   var delivery = document.querySelector(".delivery-button");
@@ -107,15 +107,15 @@
     });
   };
 
-  if (dreli) {
+  if (drills) {
     slider_left.addEventListener("click", function (evt) {
       evt.preventDefault();
-      dreli.classList.toggle("promo-active");
+      drills.classList.toggle("promo-active");
       perforators.classList.toggle("promo-active");
     });
     slider_right.addEventListener("click", function (evt) {
       evt.preventDefault();
-      dreli.classList.toggle("promo-active");
+      drills.classList.toggle("promo-active");
       perforators.classList.toggle("promo-active");
     });
   };
